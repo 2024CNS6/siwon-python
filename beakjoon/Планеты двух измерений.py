@@ -1,0 +1,5 @@
+n, m = map(int, input().split())
+min_val = min(n, m)
+remaining = abs(n - m)
+max_planets = min_val * 2 + (1 if remaining > 0 else 0)
+print(max_planets)
